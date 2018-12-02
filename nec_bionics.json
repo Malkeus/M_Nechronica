@@ -48,7 +48,7 @@
       ]
     ],
     "act_cost": 50,
-    "BIONIC_GUN": true,
+    "flags": [ "BIONIC_GUN" ],
     "fake_item": "bio_remote_attack_fake",
     "description": "Your arms and legs come off and attack the opponent. Since they return automatically after the attack, you do not have to worry about removing it."
   },
@@ -85,7 +85,7 @@
     "range": 1,
     "ranged_damage": 70,
     "pierce": 50,
-    "dispersion": 10,
+    "dispersion": 0,
     "sight_dispersion": 0,
     "aim_speed": 3,
     "durability": 10,
@@ -104,7 +104,7 @@
       ]
     ],
     "act_cost": 200,
-    "BIONIC_GUN": true,
+    "flags": [ "BIONIC_GUN" ],
     "fake_item": "bio_pile_fake",
     "description": "The metallic stake stored in the forearm shoots with high vibration and super high speed. Although you need to approach to close range, that power is guaranteed. Of course, it also consumes electricity."
   },
@@ -146,9 +146,11 @@
     "volume": 9,
     "bashing": 10,
     "cutting": 40,
+    "use_action": "JACKHAMMER",
     "qualities": [ [ "DRILL", 3 ] ,[ "DIG", 3 ]  ],
     "flags": [
       "STAB",
+      "DIG_TOOL",
       "NON_STUCK",
       "NO_UNWIELD",
       "UNBREAKABLE_MELEE",
@@ -169,9 +171,8 @@
         2
       ]
     ],
-    "BIONIC_TOGGLED": true,
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON" ],
     "act_cost": 100,
-    "BIONIC_WEAPON": true,
     "fake_item": "bio_drill_fake",
     "description": "Embed the deformation mechanism from the wrist to the drill head. It consumes electric power and starts high-speed rotation. You can excavate both the ground and zombies."
   },
@@ -201,13 +202,13 @@
     "description": "This is a lightsaber. KWISHUUUU KWISHUUUU.",
     "weight": 1200,
     "volume": 10,
-    "to_hit": 0,
+    "to_hit": 4,
     "color": "dark_gray",
     "symbol": "{",
     "material": [
       "superalloy"
     ],
-    "cutting": 40,
+    "cutting": 42,
     "techniques": [ "WBLOCK_2", "RAPID" ],
     "flags": [ "LIGHT_50", "DURABLE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE","NON_STUCK","NO_UNWIELD" ]
   },
@@ -225,10 +226,9 @@
         5
       ]
     ],
-    "BIONIC_TOGGLED": true,
     "act_cost": 200,
-    "BIONIC_WEAPON": true,
     "fake_item": "bio_lightsaber_fake",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON" ],
     "description": "Embed the mechanism that generates the light blade in the arm. It becomes a powerful weapon by starting as necessary."
   },
   {
